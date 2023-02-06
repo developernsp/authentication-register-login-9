@@ -25,6 +25,9 @@ const initializeDbAndServer = async () => {
 };
 initializeDbAndServer();
 
+const validatePassword = (password) => {
+  return password.length > 4;
+};
 //POST Register User API
 
 app.post("/register", async (request, response) => {
